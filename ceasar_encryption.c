@@ -43,7 +43,7 @@ int main() {
     encrypt(plaintext, key);
     printf("Encrypted ciphertext: %s\n", plaintext);
 
-    // Brute force attack to discover the key and decrypt the ciphertext
+    // Brute force attack trying keys from 2 to 10 to discover the key and decrypt the ciphertext
     printf("Brute force attack:\n");
     for (int i = 2; i <= 10; i++) {
         char ciphertext[MAX_LENGTH];
